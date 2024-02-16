@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Profile.css">
+    <title>Profile</title>
+</head>
+
+<body>
+    <div class="profile">
+        <nav>
+            <img class="logo" src="ProfileLogo.png" alt="Logo">
+            <a  class="nav-btn" href="index.htm" >Home</a>
+            <a  class="nav-btn" href="#" >Message</a>
+            <a  class="nav-btn" href="#" >Notification</a>
+            <a  class="nav-btn" href="#" >Contact</a>
+            
+
+    <!-------  SETTING -------->
+            <nav class="setting-dropdown"> 
+                <a class="setting-btn" href="#" >Setting</a>
+                <div class="setting-content">
+                    <a href="#" >Log out</a>
+                    <a href="#" >Privacy</a>
+                    <a href="#" >Security</a>
+                    <a href="#" >Terms and Condition</a>
+                </div>
+            </nav>
+        </nav>
+
+    <!-------  PROFILE -------->
+
+    <center>
+        <div class="profile-setup">
+            <div class="infobox">
+                <div><img class="profile-pic" src="ProfilePic.jfif" alt="Profile Pic"></div>
+            
+                <h1 class="name">Juan Dela Cruz</h1>
+
+                <button class="edit-profile-btn" onclick="appearProfileInfo()">Edit Profile Info</button>
+            </div>
+
+         </div>
+     </center>
+    </div>
+    <div class="profile-page-body">
+        <div class="personal-info" id="profileInfo">
+            <form action="">
+                <label for="name1" id="namelabel">Name: </label>
+                <input type="text" id="name1" name="name1" value="Juan055">  <br>
+
+                <label for="email" id="emaillabel">Email: </label>
+                <input type="email" id="email" name="email" value="J*************@gmail.com" disabled>  
+                <input type="button" id="change" value="Change"> <br>
+
+                <label for="address" id="address">Address: </label>
+                <input type="text" id="address" name="address" value="Makati Ang, Makite Lagite" size="50"> <br>
+
+                <label> Gender: </label>
+                <input type="radio" id="male" name="gender" value="male">
+                <label class="male" for="male" id="gender" class="male">Male</label>
+                <input type="radio" id="female" name="gender" value="female">
+                <label class="female" for="female">Female</label> <br>
+
+                <label for="bday" id="bday-label">Birth Date: </label>
+                <input type="date" id="bday" name="name1" value="01/01/2000">  <br>
+
+                <label for="country" id="country-label">Address: </label>
+                <input type="text" id="country" name="country" value="Philippines" size="25"> <br>
+
+                <label for="zip-code" id="zip-code-label">Zip Code: </label>
+                <input type="number" id="zip-code" name="zip-code" value="0000">  <br>
+
+                <label for="mobile-number" id="mobile-number-label">Mobile Number: </label>
+                <input type="number" id="mobile-number" name="mobile-number" value="09011102930">  <br>
+
+                <button class="save" onclick="closeProfileInfo()">Save Changes</button>
+            </form>
+        </div>
+    </div>
+    
+<center>
+    <div class="profile-nav">
+        <a href=""> Post </a>
+        <a href=""> About </a>
+        <a href=""> Photo </a>
+        <a href=""> Videos </a>
+    </div>
+</center>
+
+    <script>
+        function appearProfileInfo() {
+            document.getElementById('profileInfo').style.visibility = "visible";
+        }
+        function closeProfileInfo() {
+            document.getElementById('profileInfo').style.visibility = "hidden";
+        }
+    </script>
+</body>
+</html>

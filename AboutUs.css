@@ -1,0 +1,142 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    background-color: #00BF63;
+  }
+  
+  html {
+    box-sizing: border-box;
+  }
+  
+  
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+  
+  .column {
+    float: left;
+    width: 33.3%;
+    margin-bottom: 16px;
+    padding: 0 8px;
+  }
+  
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    margin: 8px;
+  }.card image{
+    height: 190px;
+    
+  }
+  
+  .about-section {
+    padding: 50px;
+    text-align: center;
+    background-color: lightgreen;
+    color: black;
+  }.about-section p{
+    text-align: left;
+  }
+  
+  .container {
+    padding: 0 16px;
+  }
+  
+  .container::after, .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  .title {
+    color: #eaffea;
+  }
+  
+  .button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  .button:hover {
+    background-color: #555;
+  }
+  
+  @media screen and (max-width: 650px) {
+    .column {
+      width: 100%;
+      display: block;
+    }
+  }
+
+
+  /* CSS - Collapsible Menu Bar */
+.open-menu, .close-menu {
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+    cursor: pointer;
+    background-color: lightgreen;
+    color: black;
+    border: solid #00BF63;
+  } .open-menu:hover, .close-menu:hover {
+    border: solid #aaa 1px;
+  }
+  
+  .menu-bar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: lightgreen;
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: 0.5s;
+  }
+      
+  .menu-bar a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: black;
+    display: block;
+    transition: 0.3s;
+    white-space: nowrap;
+  } .menu-bar a:hover {
+    color: black;
+    background-color: #bbfabb;
+  }
+  
+  .close-menu {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+      
+  @media screen and (max-height: 450px) {
+    .sidebar {padding-top: 15px;}
+    .sidebar a {font-size: 18px;}
+  }
+  .more-info{
+    display: flex;
+    justify-content: space-around;
+
+  }
+  .flex-container{
+    display: flex;
+    justify-content: space-around;
+  }
+  .logo{
+    width: 45px;
+    height: 35px;
+    object-fit: cover;
+  }

@@ -1,0 +1,149 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link rel="stylesheet" href="styles/stylesheet.css">
+</head>
+<body>
+    <!-- HEADER -->
+  <div class="head-bar">
+
+    <!-- Menu Button -->
+    <div class="btnBox" id="menuClosed">
+      <button class="open-menu hoverbtn" onclick="openMenu()">☰</button>
+      </div>
+        <img src="Logo.png"  />
+      <div class="search-box">
+        <form><input class="search-bar" type="text"  placeholder="Search smh" /></form>
+      </div>
+      <div class="links">
+        <div class="cart-button hoverbtn"><img src="imgs/cart.png"  alt="cart-btn"  /></div>
+        <div class="profile-button hoverbtn"><a href="Profile.html"><img src="proLogo.png" alt="profile-btn" /></a></div>  
+      </div>  
+    </div>
+  </div>
+
+    <!-- Side Bar Menu -->
+  <div class="menu-bar" id="menuCollapsed">
+    <button class="close-menu hoverbtn" onclick="closeMenu()">×</button>
+    <a href="index.htm">Home</a>
+    <a href="">Trade History</a>
+    <a href="">Filter by Category</a>
+    <a href="About-Us.html">About</a>
+    <a href="">Contact Us</a>
+  </div>
+
+    <!-- BODY -->
+  <div class="mainbg">
+    <p>Welcome to Tsuredu</p>
+  </div>
+    <div class="img-box">
+      <section>
+        <h2>Why Choose Your Trading Platform?</h2>
+        <p>Trading Solution Unravelling dynamics Redifining Eevery Day trades Uniquely</p>
+        <p>TSUREDU - Where transformative solutions meet the power of unleashing returns, empowering traders in an undefinable trading experience.</p>
+        <p>User Friendly - Our platform has a simple and user-friendly interface, allowing traders with and without trade experience to navigate and execute trades efficiently.</p>
+        <p>Security Measure - our platform prioritizes the protection of user funds and data. We employ industry-standard encryption protocols, multi-factor authentication, and secure payment gateways to safeguard users' assets and personal information.</p>
+        <p>Educational Resources -  our platform provides a wealth of educational resources, including tutorials, webinars, articles, and market analysis, to empower traders with knowledge and skills necessary for informed decision-making.</p>
+        <p>Customer Support - Our dedicated customer support team is available 24/7 to assist users with any queries or issues they may encounter. </p>
+        <p>Mobile Trading - Our platform is accessible on multiple devices, including desktops, smartphones, and tablets, through native mobile apps or responsive web design. </p>
+        <p>Regulatory Compliance - We adhere to strict regulatory standards and comply with relevant financial regulations to ensure a safe and transparent trading environment. </p>
+    </section>
+    <!--Sample item-->
+    <section>
+    <h2>Featured Markets</h2>
+    <p>Pictures:</p>
+    
+    <!-- <div class="container">
+     <a href="youtube.com"><div class="item3 item"><p>Shoes</p></div></a> 
+     <a href="youtube.com"><div class="item1 item"><p>Clothes</p></div></a>
+      <a href="youtube.com"><div class="item2 item"><p>Gadgets</p></div></a>
+    
+    </div> -->
+
+    <div class="slideshow-container">
+      <!-- Full-width images with number and caption text -->
+      <div class="mySlides fade">
+        <div class="numbertext">1 / 3</div>
+        <img src="styles/Shoes.webp" style="width:100%">
+        <div class="text">
+          <h2>Butiki</h2>
+          <p>
+            Made from Paris. Does not bite, it will swallow you whole. Low maintenance, feed it whatever you like.
+          </p>
+        </div>
+      </div>
+    
+      <div class="mySlides fade">
+        <div class="numbertext">2 / 3</div>
+        <img src="styles/Clothes.webp" style="width:100%">
+        <div class="text">
+          <h2>Butiki no. 2</h2>
+          <p>
+            Reptile pet! Need to barter ASAP! One week old, probably will grow more. Issues including: depression, eating disorder, highly skilled at bladed weapons. PM for sure traders.
+          </p>
+        </div>
+      </div>
+    
+      <div class="mySlides fade">
+        <div class="numbertext">3 / 3</div>
+        <img src="styles/Gadgets.webp" style="width:100%">
+        <div class="text">
+          <h2>Peeking Dawg</h2>
+          <p>
+            peeking dawg.
+          </p>
+        </div>
+      </div>
+    
+      <!-- Next and previous buttons -->
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <br>
+    
+    <!-- The dots/circles -->
+    <div style="text-align:center">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+</section>
+   </div>
+
+   <button class="dark-mode-btn glow-on-hover" onclick="toggleDarkMode()">Toggle Dark Mode</button>
+    <!-- FOOTER -->
+    <footer id="footer">
+            <div class="container">
+            <div class="row">
+            <a href="index.html"></a>
+        </div>
+     <div class="more-info">
+        <div class="useful-link">
+            <h2>Useful Links</h2>
+            <div class="use-links">
+                <li><a href="index.html"><i class="fa-solid fa-angles-right"></i> Home</a></li>
+                <li><a href="about.html"><i class="fa-solid fa-angles-right"></i> About Us</a></li>
+                <li><a href="gallery.html"><i class="fa-solid fa-angles-right"></i> Gallery</a></li>
+                  <li><a href="contact.html"><i class="fa-solid fa-angles-right"></i> Contact</a></li>
+            </div>
+        </div>       
+        <div class="social-links">
+            <h2>Follow Us</h2>
+            <div class="social-icons">
+                <div class="logo">
+                <li><a href=""><img class="logo" src="imgs/facebooklogo.png"> Facebook</a></li>
+                <li><a href=""><img class="logo" src="imgs/instalogo.jpg"> Instagram</a></li>
+                <li><a href=""><img class="logo" src="imgs/twitterlogo.png"> Twitter</a></li>
+                </div>
+            </div>
+        </div> 
+    </div><br>
+    </footer>
+    <footer><p class="footspa">&copy; 2024 TSUREDU Trading Platform. All rights reserved.</p></footer>
+<!-- External JS script (sa baba bago yung '</body>' -->
+<script src="scripts/script.js"></script>
+</body>
+</html>
